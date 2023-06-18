@@ -83,18 +83,18 @@ Parameters:
     - `y` (Array): Array two\
 Returns: Assertion passed or failed
 
-* `assertEqual(actual, expected)`
-Description: This function asserts true or false depending on the equality of two values
+* `assertEqual(actual, expected)`\
+Description: This function asserts true or false depending on the equality of two values\
 Parameters:
     - `actual` (Array): Original array
-    - `expected` (Array): Check array
+    - `expected` (Array): Check array\
 Returns: Assertion passed or failed
 
-* `assertObjectsEqual(actual, expected)`
-Decription: This functions asserts true or false depending on the equality of two objects
+* `assertObjectsEqual(actual, expected)`\
+Decription: This functions asserts true or false depending on the equality of two objects\
 Parameters: 
     - `actual` (Object): Original object
-    - `expected` (Object): Check object
+    - `expected` (Object): Check object\
 Returns: Assertion passed or failed
 
 * `countLetters(phrase)`
