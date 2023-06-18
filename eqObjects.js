@@ -1,33 +1,8 @@
-/*const countOnly = function(allItems, itemsToCount) {
-    const results = {};
-    for (const item of allItems) {
-      if (itemsToCount[item]) {
-        if (results[item]) {
-          results[item] += 1;
-          console.log(results);
-        } else {
-          results[item] = 1;
-        }
-      }
-    }
-    return results;
-  };
-  */
-  const eqArrays = function(x, y) {
-    if(x === y) {
-        return true;
-    }
-    for (let i = 0; i < x.length; i++) {
-        if (x[i] === y[i]) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-}
-
-
+/*
+This function is used to determine whether two objects are equal, and will return
+true if the objects are equal, and false if the objects are not equal
+*/
+const eqArrays = require('./eqArrays');
 const eqObjects = function (object1, object2) {
   nArr = Object.keys(object1);
   nArr2 = Object.keys(object2);
@@ -48,7 +23,13 @@ const eqObjects = function (object1, object2) {
     return true;
   }
 };
-  
+/*
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject= { size: "medium", color: "red" };
-console.log(eqObjects(shirtObject , anotherShirtObject)); // => true
+eqObjects(shirtObject , anotherShirtObject); // => true
+
+const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
+eqObjects(shirtObject , longSleeveShirtObject); // => false
+*/
+  
+module.exports = eqObjects;
