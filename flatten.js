@@ -1,27 +1,7 @@
-const aAE = function(x,y) {
-    if (eqArrays(x,y) === true){
-        console.log(`✅✅✅ Assertion passed: ${x} === ${y}.`);
-    }
-    else {
-        console.log(`🛑🛑🛑 Assertion Failed: ${x} !== ${y}.`);
-    }
-}
-
-
-  const eqArrays = function(x, y) {
-    if(x === y) {
-        return true;
-    }
-    for (let i = 0; i < x.length; i++) {
-        if (x[i] === y[i]) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-}
-
+/*
+This function is used to accept mutliple arrays and return a compressed single
+array containing the multiple arrays
+*/
 const flatten = function(lst) {
     const newArr = [];
     for(let i = 0; i < lst.length; i++) {
@@ -38,4 +18,4 @@ const flatten = function(lst) {
     return newArr;
 }
 
-console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
+module.exports = flatten;
