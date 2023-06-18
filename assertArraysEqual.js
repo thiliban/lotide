@@ -1,24 +1,18 @@
-const eqArrays = function(x, y) {
-    for (let i = 0; i < x.length; i++) {
-        if (x[i] === y[i]) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-}
-const aAE = function(x,y) {
+/*
+This function is used to determine whether the assertion is passed depending
+on the equality of two arrays. If two arrays are equal, then this function will
+return '✅✅✅ Assertion passed:', otherwise it'll return '🛑🛑🛑 Assertion Failed:'.
+*/
+
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = function(x,y) {
     if (eqArrays(x,y) === true){
         console.log(`✅✅✅ Assertion passed: ${x} === ${y}.`);
     }
     else {
         console.log(`🛑🛑🛑 Assertion Failed: ${x} !== ${y}.`);
     }
-}
+};
 
-console.log(aAE([1, 2, 3], [1, 2, 3])) // => true
-console.log(aAE([1, 2, 3], [3, 2, 1])) // => false
-
-console.log(aAE(["1", "2", "3"], ["1", "2", "3"])) // => true
+module.exports = assertArraysEqual;
 
