@@ -1,27 +1,9 @@
-const eqObjects = function (object1, object2) {
-    nArr = Object.keys(object1);
-    nArr2 = Object.keys(object2);
-    if (nArr.length !== nArr2.length) {
-      return false;
-    } 
-    else {
-      for (let item in object1) {
-        if ((Array.isArray(object1[item]) && Array.isArray(object2[item]))) { 
-          if (eqArrays(object1[item], object2[item]) === true) {
-            return true
-          }
-        } 
-        else {
-          if (object1[item] !== object2[item]) {
-            return false;
-          }
-        }
-      }
-      return true;
-    }
-  };
-
-
+/*
+This function is used to determine whether the assertion is passed depending
+on the equality of two objects. If two objects are equal, then this function will
+return '✅✅✅ Assertion passed:', otherwise it'll return '🛑🛑🛑 Assertion Failed:'.
+*/
+const eqObjects = require('./eqObjects');
 const assertObjectsEqual = function(actual, expected) {
     const inspect = require('util').inspect;
     if (eqObjects(actual, expected)){
@@ -34,6 +16,4 @@ const assertObjectsEqual = function(actual, expected) {
 
 };
 
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject= { size: "medium", color: "red" };
-console.log(assertObjectsEqual(shirtObject , anotherShirtObject)); 
+module.exports = assertObjectsEqual;
