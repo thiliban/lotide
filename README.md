@@ -97,97 +97,97 @@ Parameters:
     - `expected` (Object): Check object\
 Returns: Assertion passed or failed
 
-* `countLetters(phrase)`
-Description: This function returns the count of each letter in a string
+* `countLetters(phrase)`\
+Description: This function returns the count of each letter in a string\
 Parameters:
-    - `phrase` (String): phrase of letters to count
+    - `phrase` (String): phrase of letters to count\
 Returns: the count of letters in the phrase
 
-* `countOnly(allItems, itemsToCount)`
-Description: This function takes items and returns the count for certain parts of the item
+* `countOnly(allItems, itemsToCount)`\
+Description: This function takes items and returns the count for certain parts of the item\
 Parameters: 
     - `allItems` (Array): array to be counted
-    - `itemsToCount` (Object): items to count in the array
+    - `itemsToCount` (Object): items to count in the array\
 Returns: count of specified items
 
-* `eqArrays(x,y))`
-Description: This function compares two arrays
+* `eqArrays(x,y))`\
+Description: This function compares two arrays\
 Parameters:
     - `x` (Array): Array One
-    - `y` (Array): Array two
+    - `y` (Array): Array two\
 Returns: True or False
 
-* `eqObjects(object1, object2)`
-Description: This function compares two objects
+* `eqObjects(object1, object2)`\
+Description: This function compares two objects\
 Parameters:
     - `object1` (Object): Object one
-    - `object2` (Object): Object two
+    - `object2` (Object): Object two\
 Returns: True or False
 
-* `findKey(object, callback)`
-Description: This function scans an object and returns the first key 
+* `findKey(object, callback)`\
+Description: This function scans an object and returns the first key\
 Parameters:
     - `object` (Object): Original object
-    - `callback` (function): Function to scan
+    - `callback` (function): Function to scan\
 Returns: the first key of the object after being scanned
 
-* `findKeyByValue(x, y)`
-Description: This function searches for a key and matches it between two objects
+* `findKeyByValue(x, y)`\
+Description: This function searches for a key and matches it between two objects\
 Parameters: 
     - `x` (Object): Original Object
-    - `y` (String): Key to find in the object
+    - `y` (String): Key to find in the object\
 Returns: keys that match
 
-* `flatten(lst)`
-Description: This function flattens multiple arrays into a single array
+* `flatten(lst)`\
+Description: This function flattens multiple arrays into a single array\
 Parameters:
-    - `lst` (Array): Original list of items
+    - `lst` (Array): Original list of items\
 Returns: a single array
 
-* `head(lst)`
-Description: This function returns the first element from an array
+* `head(lst)`\
+Description: This function returns the first element from an array\
 Parameters: 
-    - `lst` (Array): Original list
+    - `lst` (Array): Original list\
 Returns: First element of an array
 
-* `index`
+* `index`\
 Description: List of all the functions
 
-* `letterPositions(sentence)`
-Description: This function returns all occurences in the string where a letter is found
+* `letterPositions(sentence)`\
+Description: This function returns all occurences in the string where a letter is found\
 Parameters:
-    - `sentence` (String); Original string of characters
+    - `sentence` (String); Original string of characters\
 Returns: Number of times a string has occured
 
-* `map(array, callback)`
-Description: This function creates a new array with results
+* `map(array, callback)`\
+Description: This function creates a new array with results\
 Parameters: 
     - `array` (Array): Original array
-    - `callback` (Function): Function with new results
+    - `callback` (Function): Function with new results\
 Returns: new array with new results
 
-* `middle(lst)`
-Description: This function returns the middle element of an array
+* `middle(lst)`\
+Description: This function returns the middle element of an array\
 Parameters: 
-    `lst` (Array): Original array
+    `lst` (Array): Original array\
 Returns: middle element of an array
 
-* `tail(lst)`
-Description: This function returns everything but the first element of an array
+* `tail(lst)`\
+Description: This function returns everything but the first element of an array\
 Parameters:
-    - `lst` (Array): Original array
+    - `lst` (Array): Original array\
 Returns: all elements, excluding the first element
 
-* `takeUntil(array, callback)`
-Description: This function returns a slice of an array with elements taken from the beginning
+* `takeUntil(array, callback)`\
+Description: This function returns a slice of an array with elements taken from the beginning\
 Parameters:
     `array` (Array): Original array
-    `callback` (Function): function of what to remove from the array
+    `callback` (Function): function of what to remove from the array\
 Returns: slice of an array excluding items from the beginning
 
-* `without(x,y)`
-Description: This function removes elements from an array
+* `without(x,y)`\
+Description: This function removes elements from an array\
 Parameters:
     - `x` (Array): Original Array
-    - `y` (String): item to remove from the original array
+    - `y` (String): item to remove from the original array\
 Returns: a new array with the desired items removed
