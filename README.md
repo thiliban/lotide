@@ -77,11 +77,11 @@ This project was created and published by me as part of my learnings at Lighthou
 The following functions are currently implemented:
 
 * `assertArraysEqual(x,y)`
-Description: This function asserts true or false depending on the equality of two arrays
-Parameters: 
-    - `x` (Array): Array one
-    - `y` (Array): Array two
-Returns: Assertion passed or failed
+Description: This function asserts true or false depending on the equality of two arrays\
+Parameters:\
+    - `x` (Array): Array one\
+    - `y` (Array): Array two\
+Returns: Assertion passed or failed\
 
 * `assertEqual(actual, expected)`
 Description: This function asserts true or false depending on the equality of two values
