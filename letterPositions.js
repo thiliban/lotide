@@ -1,3 +1,7 @@
+/*
+This function accepts a character of strings in the 'sentence' parameter, and returns
+the index of each character in the string.
+*/
 const letterPositions = function(sentence) {
     const results = {};
     for (let item of sentence) {
@@ -12,6 +16,6 @@ const letterPositions = function(sentence) {
     }
     
     return results;
-  };
+};
 
-  console.log(letterPositions("hello there"));
+module.exports = letterPositions;
