@@ -76,7 +76,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `assertArraysEqual(x,y)`
+* `assertArraysEqual(x,y)`\
 Description: This function asserts true or false depending on the equality of two arrays\
 Parameters:\
     - `x` (Array): Array one\
